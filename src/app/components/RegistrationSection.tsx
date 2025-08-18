@@ -552,44 +552,51 @@ const RegistrationSection = () => {
     return (
         <section id="registration" className="bg-[#EDDEBA] relative overflow-hidden pb-4 sm:pb-6 lg:pb-8">
             {/* Header */}
-            <div className="relative w-full flex justify-center items-center py-4 sm:py-6 lg:py-8 bg-[#EDDEBA] overflow-hidden">
-                <h1
-                    className="absolute hidden sm:block text-[32px] sm:text-[45px] md:text-[55px] lg:text-[67px] font-semibold opacity-30 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
-                    style={{
-                        fontFamily: "Playfair Display",
-                        WebkitTextStroke: "1px #9ca3af",
-                        color: "transparent"
-                    }}
-                >
-                    Registrations
-                </h1>
+            <div>
+                <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
 
-                <div className="flex items-center z-10">
-                    <div className="relative mr-1 sm:mr-2">
-                        <div
-                            className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
-                            style={{
-                                height: '3px',
-                                clipPath: 'polygon(0 50%, 100% 0, 100% 100%, 0 50%)'
-                            }}
-                        ></div>
-                    </div>
-
-                    <h2 
-                        className="text-lg sm:text-xl md:text-2xl lg:text-[32px] font-semibold text-[#012CDB] px-2 sm:px-3 lg:px-4"
-                        style={{ fontFamily: "Playfair Display" }}
+                {/* Header Section - Responsive */}
+                <div className="relative w-full flex justify-center items-center py-8 sm:py-10 lg:py-12 bg-transparent overflow-hidden">
+                    {/* Background oversized text - responsive sizing */}
+                    <h1
+                        className="absolute text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-semibold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
+                        style={{
+                            fontFamily: "Playfair Display",
+                            WebkitTextStroke: "1px #9ca3af",
+                            color: "transparent"
+                        }}
                     >
-                        Registrations
-                    </h2>
+                        Registerations
+                    </h1>
 
-                    <div className="relative ml-1 sm:ml-2">
-                        <div
-                            className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
-                            style={{
-                                height: '3px',
-                                clipPath: 'polygon(0 0, 100% 50%, 0 100%, 0 0)'
-                            }}
-                        ></div>
+                    {/* Center bold blue title with lines - responsive */}
+                    <div className="flex items-center z-10 px-4">
+                        {/* Left tapered line - responsive width */}
+                        <div className="relative mr-2 sm:mr-3">
+                            <div
+                                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
+                                style={{
+                                    height: '4px',
+                                    clipPath: 'polygon(0 50%, 100% 0, 100% 100%, 0 50%)'
+                                }}
+                            ></div>
+                        </div>
+
+                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-semibold text-[#012CDB] text-center whitespace-nowrap"
+                            style={{ fontFamily: "Playfair Display" }}>
+                            Registrations
+                        </h2>
+
+                        {/* Right tapered line - responsive width */}
+                        <div className="relative ml-2 sm:ml-3">
+                            <div
+                                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
+                                style={{
+                                    height: '4px',
+                                    clipPath: 'polygon(0 0, 100% 50%, 0 100%, 0 0)'
+                                }}
+                            ></div>
+                        </div>
                     </div>
                 </div>
             </div>

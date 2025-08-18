@@ -222,31 +222,25 @@ const people = {
   partnership: [
     {
       name: 'Pinky Chahar',
+      designation: 'Director',
       email: 'pinky.chahar@voiceofhealthcare.org',
       phone: '9599193575',
     },
     {
       name: 'Khushbu Sharma',
+      designation: 'joint Director',
       email: 'Khushbu.sh@voiceofhealthcare.org',
-      phone: '9599193575',
+      phone: '8407982899',
     },
   ],
   delegate: [
     {
-      name: 'Pinky Chahar',
-      email: 'pinky.chahar@voiceofhealthcare.org',
-      phone: '9599193575',
+      name: 'Katyayni Sinha',
+      designation: 'Manager Administration',
+      email: 'katyayni.s@voiceofhealthcare.org',
+      phone: '8789925401',
     },
-    {
-      name: 'Khushbu Sharma',
-      email: 'Khushbu.sh@voiceofhealthcare.org',
-      phone: '9599193575',
-    },
-    {
-      name: 'Khushbu Sharma',
-      email: 'Khushbu.sh@voiceofhealthcare.org',
-      phone: '9599193575',
-    },
+    
   ],
 };
 
@@ -288,59 +282,58 @@ export default function ContactUs() {
         className="opacity-80 hidden lg:block"
         style={{
           objectFit: 'scale-down',
-          transform: 'translate(-120px, 180px)', // Original desktop positioning
+          transform: 'translate(-250px, 180px)', // Original desktop positioning
         }}
       />
 
       <div>
-        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
 
-        <div className="relative w-full flex justify-center items-center py-4 sm:py-6 lg:py-8 bg-[#EDDEBA] overflow-hidden">
-          {/* Background oversized text - hidden on mobile, visible on larger screens */}
-          <h1
-            className="absolute hidden sm:block text-[32px] sm:text-[45px] md:text-[55px] lg:text-[67px] font-semibold opacity-30 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
-            style={{
-              fontFamily: "Playfair Display",
-              WebkitTextStroke: "1px #9ca3af",
-              color: "transparent"
-            }}
-          >
-            Contact Us
-          </h1>
+                {/* Header Section - Responsive */}
+                <div className="relative w-full flex justify-center items-center py-8 sm:py-10 lg:py-12 bg-transparent overflow-hidden">
+                    {/* Background oversized text - responsive sizing */}
+                    <h1
+                        className="absolute text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-semibold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
+                        style={{
+                            fontFamily: "Playfair Display",
+                            WebkitTextStroke: "1px #9ca3af",
+                            color: "transparent"
+                        }}
+                    >
+                        Contact Us
+                    </h1>
 
-          {/* Center bold blue title with lines */}
-          <div className="flex items-center z-10">
-            {/* Left tapered line - responsive width */}
-            <div className="relative mr-1 sm:mr-2">
-              <div
-                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
-                style={{
-                  height: '3px',
-                  clipPath: 'polygon(0 50%, 100% 0, 100% 100%, 0 50%)'
-                }}
-              ></div>
+                    {/* Center bold blue title with lines - responsive */}
+                    <div className="flex items-center z-10 px-4">
+                        {/* Left tapered line - responsive width */}
+                        <div className="relative mr-2 sm:mr-3">
+                            <div
+                                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
+                                style={{
+                                    height: '4px',
+                                    clipPath: 'polygon(0 50%, 100% 0, 100% 100%, 0 50%)'
+                                }}
+                            ></div>
+                        </div>
+
+                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-semibold text-[#012CDB] text-center whitespace-nowrap"
+                            style={{ fontFamily: "Playfair Display" }}>
+                            Contact Us
+                        </h2>
+
+                        {/* Right tapered line - responsive width */}
+                        <div className="relative ml-2 sm:ml-3">
+                            <div
+                                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
+                                style={{
+                                    height: '4px',
+                                    clipPath: 'polygon(0 0, 100% 50%, 0 100%, 0 0)'
+                                }}
+                            ></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <h2 
-              className="text-lg sm:text-xl md:text-2xl lg:text-[32px] font-semibold text-[#012CDB] px-2 sm:px-3 lg:px-4"
-              style={{ fontFamily: "Playfair Display" }}
-            >
-              Contact Us
-            </h2>
-
-            {/* Right tapered line - responsive width */}
-            <div className="relative ml-1 sm:ml-2">
-              <div
-                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
-                style={{
-                  height: '3px',
-                  clipPath: 'polygon(0 0, 100% 50%, 0 100%, 0 0)'
-                }}
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-center mt-3 sm:mt-4 lg:mt-6">
         {/* Partnership Section */}
@@ -353,7 +346,7 @@ export default function ContactUs() {
                   className="text-sm sm:text-base lg:text-lg font-semibold tracking-wide text-[#A15B5B]" 
                   style={{ fontFamily: "Playfair Display" }}
                 >
-                  FOR PARTNERSHIP
+                  FOR SPEAKERSHIP & PARTNERSHIPS
                 </h3>
               </div>
             </div>
@@ -365,10 +358,20 @@ export default function ContactUs() {
                   {/* Name */}
                   <div className="flex items-center gap-2">
                     <div className="bg-opacity-20 p-1.5 sm:p-2 rounded">
-                      <User className="w-3 h-3 sm:w-4 sm:h-4" />
+                      <User className="w-3 h-3 sm:w-4 sm:h-4 font-semibold" />
                     </div>
                     <span className="text-sm sm:text-base lg:text-md font-semibold">
                       {person.name}
+                    </span>
+                  </div>
+
+                  {/* Designation */}
+                  <div className="flex items-center gap-2">
+                    <div className="bg-opacity-20 p-1.5 sm:p-2 rounded">
+                      <User className="w-3 h-3 sm:w-4 sm:h-4" />
+                    </div>
+                    <span className="text-xs sm:text-sm lg:text-base break-all">
+                      {person.designation}
                     </span>
                   </div>
 
@@ -387,7 +390,7 @@ export default function ContactUs() {
                     <div className="bg-opacity-20 p-1.5 sm:p-2 rounded">
                       <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
-                    <span className="text-sm sm:text-base lg:text-base font-semibold">
+                    <span className="text-xs sm:text-sm lg:text-base break-all">
                       {person.phone}
                     </span>
                   </div>
@@ -398,7 +401,7 @@ export default function ContactUs() {
         </div>
 
         {/* Delegate Section */}
-        <div className="max-w-6xl mx-auto mt-8 sm:mt-12 lg:mt-16">
+        <div className="max-w-5xl mx-auto mt-8 sm:mt-12 lg:mt-16">
           <div className="bg-[#A15B5B] rounded-xl sm:rounded-2xl px-4 sm:px-6 lg:px-8 py-2 text-white shadow-lg">
             {/* Header - responsive button */}
             <div className="text-center mb-4 sm:mb-5 lg:mb-6">
@@ -407,7 +410,7 @@ export default function ContactUs() {
                   className="text-sm sm:text-base lg:text-lg font-semibold tracking-wide text-[#A15B5B]" 
                   style={{ fontFamily: "Playfair Display" }}
                 >
-                  FOR DELEGATES
+                  FOR DELEGATES & AWARDS
                 </h3>
               </div>
             </div>
@@ -419,10 +422,20 @@ export default function ContactUs() {
                   {/* Name */}
                   <div className="flex items-center gap-2">
                     <div className="bg-opacity-20 p-1.5 sm:p-2 rounded">
-                      <User className="w-3 h-3 sm:w-4 sm:h-4" />
+                      <User className="w-3 h-3 sm:w-4 sm:h-4 font-semibold" />
                     </div>
                     <span className="text-sm sm:text-base lg:text-md font-semibold">
                       {person.name}
+                    </span>
+                  </div>
+
+                  {/* Designation */}
+                  <div className="flex items-center gap-2">
+                    <div className="bg-opacity-20 p-1.5 sm:p-2 rounded">
+                      <User className="w-3 h-3 sm:w-4 sm:h-4" />
+                    </div>
+                    <span className="text-xs sm:text-sm lg:text-base break-all">
+                      {person.designation}
                     </span>
                   </div>
 
@@ -441,7 +454,7 @@ export default function ContactUs() {
                     <div className="bg-opacity-20 p-1.5 sm:p-2 rounded">
                       <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
-                    <span className="text-sm sm:text-base lg:text-base font-semibold">
+                    <span className="text-xs sm:text-sm lg:text-base break-all">
                       {person.phone}
                     </span>
                   </div>

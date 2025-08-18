@@ -136,7 +136,7 @@ const OverviewSection = () => {
         <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
 
         {/* Header Section - Responsive */}
-        <div className="relative w-full flex justify-center items-center py-6 sm:py-8 lg:py-8 bg-[#EDDEBA] overflow-hidden">
+        <div className="relative w-full flex justify-center items-center py-6 sm:py-8 lg:py-8 bg-transparent overflow-hidden">
           {/* Background oversized text - responsive sizing */}
           <h1
             className="absolute text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-semibold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"

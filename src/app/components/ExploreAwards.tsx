@@ -173,14 +173,52 @@ const awards = [
 export default function ExploreAwards() {
     return (
         <div className="relative bg-[#EDDEBA] p-4 sm:p-6 lg:p-8 pb-6 sm:pb-8 lg:pb-12 overflow-hidden">
+            <Image
+                    src="/CUbranch.png"
+                    alt="Branch Background"
+                    fill
+                    quality={100}
+                    className="opacity-60 sm:opacity-70 lg:opacity-80 hidden sm:block md:hidden"
+                    style={{
+                      objectFit: 'scale-down',
+                      transform: 'translate(-60px, 80px) scale(0.6)', // Mobile positioning
+                    }}
+                  />
+                  
+                  {/* Tablet positioning */}
+                  <Image
+                    src="/CUbranch.png"
+                    alt="Branch Background"
+                    fill
+                    quality={100}
+                    className="opacity-70 hidden sm:block md:hidden"
+                    style={{
+                      objectFit: 'scale-down',
+                      transform: 'translate(-80px, 120px) scale(0.8)', // Tablet positioning
+                    }}
+                  />
+                  
+                  {/* Desktop positioning - original */}
+                  <Image
+                    src="/CUbranch.png"
+                    alt="Branch Background"
+                    fill
+                    quality={100}
+                    className="opacity-80 hidden lg:block"
+                    style={{
+                      objectFit: 'scale-down',
+                      transform: 'translate(-205px, -420px)', // Original desktop positioning
+                    }}
+                  />
             {/* Header */}
             <div>
-                <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet" />
-                
-                <div className="relative w-full flex justify-center items-center py-4 sm:py-6 lg:py-8 bg-[#EDDEBA] overflow-hidden">
-                    {/* Background oversized text - hidden on mobile, visible on larger screens */}
+                <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
+
+                {/* Header Section - Responsive */}
+                <div className="relative w-full flex justify-center items-center py-8 sm:py-10 lg:py-12 bg-transparent overflow-hidden">
+                    {/* Background oversized text - responsive sizing */}
                     <h1
-                        className="absolute hidden sm:block text-[20px] sm:text-[30px] md:text-[45px] lg:text-[67px] font-semibold opacity-30 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
+                        className="absolute text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-semibold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
                         style={{
                             fontFamily: "Playfair Display",
                             WebkitTextStroke: "1px #9ca3af",
@@ -190,31 +228,30 @@ export default function ExploreAwards() {
                         Explore Our Other Awards
                     </h1>
 
-                    <div className="flex items-center z-10">
+                    {/* Center bold blue title with lines - responsive */}
+                    <div className="flex items-center z-10 px-4">
                         {/* Left tapered line - responsive width */}
-                        <div className="relative mr-1 sm:mr-2">
+                        <div className="relative mr-2 sm:mr-3">
                             <div
-                                className="w-4 sm:w-8 md:w-16 lg:w-30 bg-[#A21B43] rounded-full"
+                                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
                                 style={{
-                                    height: '3px',
+                                    height: '4px',
                                     clipPath: 'polygon(0 50%, 100% 0, 100% 100%, 0 50%)'
                                 }}
                             ></div>
                         </div>
-                        
-                        <h2 
-                            className="text-sm sm:text-lg md:text-xl lg:text-[32px] font-semibold text-[#012CDB] px-1 sm:px-2 lg:px-4 text-center" 
-                            style={{ fontFamily: "Playfair Display" }}
-                        >
+
+                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-semibold text-[#012CDB] text-center whitespace-nowrap"
+                            style={{ fontFamily: "Playfair Display" }}>
                             Explore Our Other Awards
                         </h2>
-                        
+
                         {/* Right tapered line - responsive width */}
-                        <div className="relative ml-1 sm:ml-2">
+                        <div className="relative ml-2 sm:ml-3">
                             <div
-                                className="w-4 sm:w-8 md:w-16 lg:w-30 bg-[#A21B43] rounded-full"
+                                className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
                                 style={{
-                                    height: '3px',
+                                    height: '4px',
                                     clipPath: 'polygon(0 0, 100% 50%, 0 100%, 0 0)'
                                 }}
                             ></div>

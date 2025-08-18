@@ -1,5 +1,6 @@
 // components/WhyBeatMatters.tsx
 'use client';
+import Image from 'next/image';
 
 import { useEffect, useState } from 'react';
 import { Copyright } from 'lucide-react';
@@ -17,6 +18,21 @@ const facts = [
 export default function WhyBeatMatters() {
   return (
     <section className="relative bg-[#EDDEBA] py-8 pb-16 overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+              {/* Mobile/Tablet: Smaller, centered background */}
+
+              
+              {/* Desktop/Laptop: Original positioning */}
+              <div className="hidden lg:block">
+                <Image
+                  src="/branch-bg.png"
+                  alt="Background overlay"
+                  width={900}
+                  height={900}
+                  className="absolute top-[-700px] right-2.5 object-fill"
+                />
+              </div>
+            </div>
       {/* Background video */}
       <video
         className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none z-0"
@@ -34,41 +50,44 @@ export default function WhyBeatMatters() {
         <div>
                 <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
 
-                <div className="relative w-full flex justify-center items-center py-12 bg-[#EDDEBA] overflow-hidden">
-                    {/* Background oversized text - very subtle */}
+                {/* Header Section - Responsive */}
+                <div className="relative w-full flex justify-center items-center py-8 sm:py-10 lg:py-12 bg-transparent overflow-hidden">
+                    {/* Background oversized text - responsive sizing */}
                     <h1
-                        className="absolute text-[67px] font-semibold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
+                        className="absolute text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-semibold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
                         style={{
                             fontFamily: "Playfair Display",
                             WebkitTextStroke: "1px #9ca3af",
                             color: "transparent"
                         }}
                     >
-                        Why Beat 2025 Matters 
+                        Why Beat 2025 Matters
                     </h1>
 
-                    {/* Center bold blue title with lines */}
-                    <div className="flex items-center z-10">
-                        {/* Left tapered line */}
-                        <div className="relative mr-2">
+                    {/* Center bold blue title with lines - responsive */}
+                    <div className="flex items-center z-10 px-4">
+                        {/* Left tapered line - responsive width */}
+                        <div className="relative mr-2 sm:mr-3">
                             <div
                                 className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
                                 style={{
-                                    height: '3px',
+                                    height: '4px',
                                     clipPath: 'polygon(0 50%, 100% 0, 100% 100%, 0 50%)'
                                 }}
                             ></div>
                         </div>
 
-                        <h2 className="text-[32px] font-semibold text-[#012CDB]"
-                            style={{ fontFamily: "Playfair Display" }}>Why Beat 2025 Matters </h2>
+                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-semibold text-[#012CDB] text-center whitespace-nowrap"
+                            style={{ fontFamily: "Playfair Display" }}>
+                            Why Beat 2025 Matters
+                        </h2>
 
-                        {/* Right tapered line */}
-                        <div className="relative ml-2">
+                        {/* Right tapered line - responsive width */}
+                        <div className="relative ml-2 sm:ml-3">
                             <div
                                 className="w-8 sm:w-16 md:w-20 lg:w-30 bg-[#A21B43] rounded-full"
                                 style={{
-                                    height: '3px',
+                                    height: '4px',
                                     clipPath: 'polygon(0 0, 100% 50%, 0 100%, 0 0)'
                                 }}
                             ></div>
@@ -76,6 +95,7 @@ export default function WhyBeatMatters() {
                     </div>
                 </div>
             </div>
+
         <p className="max-w-3xl mx-auto text-lg md:text-xl mb-3">
           Cardiovascular diseases (CVDs) are not just a health issue in India.
         </p>

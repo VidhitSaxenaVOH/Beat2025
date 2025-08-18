@@ -15,9 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Beat 2025",
   description: "Beat 2025 National Cardiovascular Summit And Awards",
-  icons: {
-    icon: "/VOH_Logo_2.png", // or /favicon.ico
-  },
 };
 
 export default function RootLayout({

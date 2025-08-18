@@ -143,7 +143,7 @@ const HighlightsSection = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
 
                 {/* Header Section - Responsive */}
-                <div className="relative w-full flex justify-center items-center py-8 sm:py-10 lg:py-12 bg-[#EDDEBA] overflow-hidden">
+                <div className="relative w-full flex justify-center items-center py-8 sm:py-10 lg:py-12 bg-transparent overflow-hidden">
                     {/* Background oversized text - responsive sizing */}
                     <h1
                         className="absolute text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-semibold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]"
@@ -202,7 +202,7 @@ const HighlightsSection = () => {
                                 </div>
                             </div>
                             {/* Horizontal divider for mobile */}
-                            {index !== highlights.length - 1 && (
+                            {/* {index !== highlights.length - 1 && (
                                 <div
                                     className="w-24 bg-[#A21B43] rounded-full mt-4"
                                     style={{
@@ -210,7 +210,7 @@ const HighlightsSection = () => {
                                         clipPath: 'polygon(0 50%, 50% 0, 100% 50%, 50% 100%)'
                                     }}
                                 ></div>
-                            )}
+                            )} */}
                         </div>
                     ))}
                 </div>
