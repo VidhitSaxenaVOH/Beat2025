@@ -1,103 +1,268 @@
-import Image from "next/image";
+import React from 'react'
+import SplashScreen from '@/app/components/SplashScreen';
+import HighlightsSection from './components/HighlightsSection';
+import OverviewSection from './components/OverviewSection';
+import KeyDiscussionPointsSection from './components/KeyDiscussionPointsSection';
+import WhoShouldAttendSection from './components/WhoShouldAttendSection';
+import PreviousPartnersSection from './components/PreviousPartnersSection';
+import RegistrationSection from './components/RegistrationSection';
+import ContactUs from './components/ContactUs';
+import ExploreAwards from './components/ExploreAwards';
+import Footer from './components/Footer';
+import WhyBeatMatters from './components/WhyBeatMatters';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import LeadersSection from './components/LeadersSection';
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    <SplashScreen>
+      <Navbar />
+      
+      <div className=""> {/* Add top padding to account for fixed navbar */}
+        <HeroSection/>
+        <HighlightsSection />
+        
+        <section id="overview">
+          <OverviewSection />
+        </section>
+        
+        <section id="why-beat-matters">
+          <WhyBeatMatters />
+        </section>
+        
+        <section id="key-discussion-points">
+          <KeyDiscussionPointsSection />
+        </section>
+        
+        <section id="who-should-attend">
+          <WhoShouldAttendSection />
+        </section>
+        
+        <section id="leaders">
+          {/* You might want to create a Leaders component or use existing one */}
+          <LeadersSection/>
+        </section>
+        
+        <section id="partners">
+          <PreviousPartnersSection />
+        </section>
+        
+        <section id="registration">
+          <RegistrationSection />
+        </section>
+        
+        <section id="contact-us">
+          <ContactUs />
+        </section>
+        
+        <ExploreAwards />
+        <Footer />
+      </div>
+    </SplashScreen>
+  )
 }
+
+export default page
+
+
+
+
+
+// "use client"
+// import React from 'react'
+// import SplashScreen from '@/app/components/SplashScreen';
+// import HighlightsSection from './components/HighlightsSection';
+// import OverviewSection from './components/OverviewSection';
+// import KeyDiscussionPointsSection from './components/KeyDiscussionPointsSection';
+// import WhoShouldAttendSection from './components/WhoShouldAttendSection';
+// import PreviousPartnersSection from './components/PreviousPartnersSection';
+// import RegistrationSection from './components/RegistrationSection';
+// import ContactUs from './components/ContactUs';
+// import ExploreAwards from './components/ExploreAwards';
+// import Footer from './components/Footer';
+// import WhyBeatMatters from './components/WhyBeatMatters';
+// import Navbar from './components/Navbar';
+// import HeroSection from './components/HeroSection';
+// import LeadersSection from './components/LeadersSection';
+// import AnimatedSection from './components/AnimatedSection'; // We'll create this component
+
+// const page = () => {
+//   return (
+//     <SplashScreen>
+//       <Navbar />
+      
+//       <div className="">
+//         {/* Hero section without animation wrapper since it has its own animations */}
+//         <HeroSection/>
+        
+//         <AnimatedSection animation="fade-up" delay={0}>
+//           <HighlightsSection />
+//         </AnimatedSection>
+        
+//         <section id="overview">
+//           <AnimatedSection animation="fade-up" delay={100}>
+//             <OverviewSection />
+//           </AnimatedSection>
+//         </section>
+        
+//         <section id="why-beat-matters">
+//           <AnimatedSection animation="slide-left" delay={150}>
+//             <WhyBeatMatters />
+//           </AnimatedSection>
+//         </section>
+        
+//         <section id="key-discussion-points">
+//           <AnimatedSection animation="fade-up" delay={200}>
+//             <KeyDiscussionPointsSection />
+//           </AnimatedSection>
+//         </section>
+        
+//         <section id="who-should-attend">
+//           <AnimatedSection animation="slide-right" delay={100}>
+//             <WhoShouldAttendSection />
+//           </AnimatedSection>
+//         </section>
+        
+//         <section id="leaders">
+//           <AnimatedSection animation="fade-up" delay={150}>
+//             <LeadersSection/>
+//           </AnimatedSection>
+//         </section>
+        
+//         <section id="partners">
+//           <AnimatedSection animation="zoom-in" delay={200}>
+//             <PreviousPartnersSection />
+//           </AnimatedSection>
+//         </section>
+        
+//         <section id="registration">
+//           <AnimatedSection animation="fade-up" delay={100}>
+//             <RegistrationSection />
+//           </AnimatedSection>
+//         </section>
+        
+//         <section id="contact-us">
+//           <AnimatedSection animation="slide-up" delay={150}>
+//             <ContactUs />
+//           </AnimatedSection>
+//         </section>
+        
+//         <AnimatedSection animation="fade-up" delay={100}>
+//           <ExploreAwards />
+//         </AnimatedSection>
+        
+//         <Footer />
+//       </div>
+
+//       {/* Global Animation Styles */}
+//       <style jsx global>{`
+//         /* Animation Keyframes */
+//         @keyframes fadeUp {
+//           from {
+//             opacity: 0;
+//             transform: translateY(60px);
+//           }
+//           to {
+//             opacity: 1;
+//             transform: translateY(0);
+//           }
+//         }
+
+//         @keyframes slideLeft {
+//           from {
+//             opacity: 0;
+//             transform: translateX(-80px);
+//           }
+//           to {
+//             opacity: 1;
+//             transform: translateX(0);
+//           }
+//         }
+
+//         @keyframes slideRight {
+//           from {
+//             opacity: 0;
+//             transform: translateX(80px);
+//           }
+//           to {
+//             opacity: 1;
+//             transform: translateX(0);
+//           }
+//         }
+
+//         @keyframes slideUp {
+//           from {
+//             opacity: 0;
+//             transform: translateY(80px);
+//           }
+//           to {
+//             opacity: 1;
+//             transform: translateY(0);
+//           }
+//         }
+
+//         @keyframes zoomIn {
+//           from {
+//             opacity: 0;
+//             transform: scale(0.8);
+//           }
+//           to {
+//             opacity: 1;
+//             transform: scale(1);
+//           }
+//         }
+
+//         @keyframes fadeIn {
+//           from {
+//             opacity: 0;
+//           }
+//           to {
+//             opacity: 1;
+//           }
+//         }
+
+//         /* Animation Classes */
+//         .animate-on-scroll {
+//           opacity: 0;
+//           transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//         }
+
+//         .animate-on-scroll.animate-fade-up {
+//           animation: fadeUp 0.8s ease-out forwards;
+//         }
+
+//         .animate-on-scroll.animate-slide-left {
+//           animation: slideLeft 0.8s ease-out forwards;
+//         }
+
+//         .animate-on-scroll.animate-slide-right {
+//           animation: slideRight 0.8s ease-out forwards;
+//         }
+
+//         .animate-on-scroll.animate-slide-up {
+//           animation: slideUp 0.8s ease-out forwards;
+//         }
+
+//         .animate-on-scroll.animate-zoom-in {
+//           animation: zoomIn 0.8s ease-out forwards;
+//         }
+
+//         .animate-on-scroll.animate-fade-in {
+//           animation: fadeIn 0.8s ease-out forwards;
+//         }
+
+//         /* Reduced motion support */
+//         @media (prefers-reduced-motion: reduce) {
+//           .animate-on-scroll {
+//             animation: none !important;
+//             opacity: 1 !important;
+//             transform: none !important;
+//           }
+//         }
+//       `}</style>
+//     </SplashScreen>
+//   )
+// }
+
+// export default page
