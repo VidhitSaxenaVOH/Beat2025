@@ -1,5 +1,10 @@
+// 
+
+
+
+// src/app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display, Roboto } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,6 +17,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+});
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["400", "700"], // pick the weights you need
+});
+
 export const metadata: Metadata = {
   title: "Beat 2025",
   description: "Beat 2025 National Cardiovascular Summit And Awards",
@@ -19,15 +35,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${roboto.variable} antialiased`}
       >
-        
         {children}
       </body>
     </html>

@@ -199,7 +199,7 @@ const OverviewSection = () => {
           
           <div className="w-full">
             <p className="text-gray-600 leading-relaxed text-base text-justify px-2">
-              With CVD's accounting for over 28% of total deaths in India, the economic,
+              With CVD&apos;s accounting for over 28% of total deaths in India, the economic,
               infrastructural, and institutional implications are impossible to ignore. As the
               burden shifts toward younger, working-age populations, the need for systemic,
               policy-led, and innovation driven responses has become more critical than ever.
@@ -227,7 +227,7 @@ const OverviewSection = () => {
           
           <div className="w-full max-w-4xl">
             <p className="text-gray-600 leading-relaxed text-lg text-justify px-4">
-              With CVD's accounting for over 28% of total deaths in India, the economic,
+              With CVD&apos;s accounting for over 28% of total deaths in India, the economic,
               infrastructural, and institutional implications are impossible to ignore. As the
               burden shifts toward younger, working-age populations, the need for systemic,
               policy-led, and innovation driven responses has become more critical than ever.
@@ -257,7 +257,7 @@ const OverviewSection = () => {
           {/* Right text - Original layout preserved */}
           <div className="w-full lg:w-3/5 text-center lg:text-justify">
             <p className="text-gray-600 leading-relaxed text-lg mr-18">
-              With CVD's accounting for over 28% of total deaths in India, the economic,
+              With CVD&apos;s accounting for over 28% of total deaths in India, the economic,
               infrastructural, and institutional implications are impossible to ignore. As the
               burden shifts toward younger, working-age populations, the need for systemic,
               policy-led, and innovation driven responses has become more critical than ever.

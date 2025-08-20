@@ -2,8 +2,8 @@
 'use client';
 import Image from 'next/image';
 
-import { useEffect, useState } from 'react';
-import { Copyright } from 'lucide-react';
+// import { useEffect, useState } from 'react';
+// import { Copyright } from 'lucide-react';
 
 const facts = [
   "CVDs account for 27% of all deaths in India.",

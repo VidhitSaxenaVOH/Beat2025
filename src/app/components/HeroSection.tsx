@@ -163,7 +163,7 @@ export default function HeroSection() {
           {/* Register Now - scroll to section */}
           <a
             href="#registration"
-            className="px-6 py-3 bg-[#E8D5B7] text-black font-medium rounded-md shadow-md hover:bg-[#f0e0c5] transition-all"
+            className="px-6 py-3 bg-[#E8D5B7] text-black font-medium rounded-full shadow-md hover:bg-[#f0e0c5] transition-all"
           >
             Register Now
           </a>
@@ -173,11 +173,12 @@ export default function HeroSection() {
             href="https://your-external-link.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-[#E8D5B7] text-black font-medium rounded-md shadow-md hover:bg-[#f0e0c5] transition-all"
+            className="px-6 py-3 bg-[#E8D5B7] text-black font-medium rounded-full shadow-md hover:bg-[#f0e0c5] transition-all"
           >
             Partner with Us
           </a>
         </div>
+
       </div>
 
       {/* Animations */}

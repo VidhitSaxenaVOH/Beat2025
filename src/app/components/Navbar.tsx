@@ -581,12 +581,12 @@ const Navbar = () => {
                         <div className="flex items-center gap-3">
                             {/* Quick access to key sections */}
                             <div className="hidden md:flex items-center gap-2">
-                                <button
+                                {/* <button
                                     onClick={() => scrollToSection('overview')}
                                     className="px-3 py-1.5 text-xs font-medium text-[#4A4A4A] hover:text-[#8B1538] hover:bg-[#D4C4A8]/50 rounded-full transition-all duration-200"
                                 >
                                     OVERVIEW
-                                </button>
+                                </button> */}
                                 <button
                                     onClick={() => scrollToSection('registration')}
                                     className="px-3 py-1.5 text-xs font-medium text-white bg-[#8B1538] hover:bg-[#A21B43] rounded-full transition-all duration-200"

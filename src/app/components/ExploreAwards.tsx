@@ -174,32 +174,32 @@ export default function ExploreAwards() {
     return (
         <div className="relative bg-[#EDDEBA] p-4 sm:p-6 lg:p-8 pb-6 sm:pb-8 lg:pb-12 overflow-hidden">
             <Image
-                    src="/CUbranch.png"
-                    alt="Branch Background"
-                    fill
-                    quality={100}
-                    className="opacity-60 sm:opacity-70 lg:opacity-80 hidden sm:block md:hidden"
-                    style={{
-                      objectFit: 'scale-down',
-                      transform: 'translate(-60px, 80px) scale(0.6)', // Mobile positioning
-                    }}
-                  />
-                  
-                  {/* Tablet positioning */}
-                  <Image
-                    src="/CUbranch.png"
-                    alt="Branch Background"
-                    fill
-                    quality={100}
-                    className="opacity-70 hidden sm:block md:hidden"
-                    style={{
-                      objectFit: 'scale-down',
-                      transform: 'translate(-80px, 120px) scale(0.8)', // Tablet positioning
-                    }}
-                  />
-                  
-                  {/* Desktop positioning - original */}
-                  <Image
+                src="/CUbranch.png"
+                alt="Branch Background"
+                fill
+                quality={100}
+                className="opacity-60 sm:opacity-70 lg:opacity-80 hidden sm:block md:hidden"
+                style={{
+                    objectFit: 'scale-down',
+                    transform: 'translate(-60px, 80px) scale(0.6)', // Mobile positioning
+                }}
+            />
+
+            {/* Tablet positioning */}
+            <Image
+                src="/CUbranch.png"
+                alt="Branch Background"
+                fill
+                quality={100}
+                className="opacity-70 hidden sm:block md:hidden"
+                style={{
+                    objectFit: 'scale-down',
+                    transform: 'translate(-80px, 120px) scale(0.8)', // Tablet positioning
+                }}
+            />
+
+            {/* Desktop positioning - original */}
+            {/* <Image
                     src="/CUbranch.png"
                     alt="Branch Background"
                     fill
@@ -207,9 +207,9 @@ export default function ExploreAwards() {
                     className="opacity-80 hidden lg:block"
                     style={{
                       objectFit: 'scale-down',
-                      transform: 'translate(-205px, -420px)', // Original desktop positioning
+                      transform: 'translate(-210px, -340px)', // Original desktop positioning
                     }}
-                  />
+                  /> */}
             {/* Header */}
             <div>
                 <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
@@ -275,8 +275,8 @@ export default function ExploreAwards() {
                     />
 
                     {/* Overlay Text - responsive sizing */}
-                    <div 
-                        className="absolute inset-0 flex justify-center items-center text-[#EDDEBA] text-xl sm:text-2xl lg:text-3xl font-bold bg-black/60 rounded-md opacity-100 transition-opacity duration-500 group-hover:opacity-0" 
+                    <div
+                        className="absolute inset-0 flex justify-center items-center text-[#EDDEBA] text-xl sm:text-2xl lg:text-3xl font-bold bg-black/60 rounded-md opacity-100 transition-opacity duration-500 group-hover:opacity-0"
                         style={{ fontFamily: "Playfair Display" }}
                     >
                         VENUE
@@ -303,28 +303,29 @@ export default function ExploreAwards() {
                 </div>
 
                 {/* Mobile/Tablet Horizontal Divider */}
+                {/* Mobile/Tablet Horizontal Divider */}
                 <div className="block lg:hidden w-full">
                     <div
                         className="w-32 sm:w-40 mx-auto bg-[#A21B43] rounded-full"
                         style={{
                             height: '4px',
-                            clipPath: 'polygon(0 0, 100% 50%, 0 100%)',
                         }}
                     ></div>
                 </div>
 
+
                 {/* Awards List - responsive grid */}
-                <div className="w-full lg:w-auto">
+                {/* <div className="w-full lg:w-auto">
                     <div className="flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 justify-center" style={{ fontFamily: "Playfair Display" }}>
                         {awards.map((award, index) => (
                             <div
                                 key={index}
                                 className="bg-transparent hover:scale-105 transition-transform duration-300 max-w-sm mx-auto sm:mx-0"
                             >
-                                <Image 
-                                    src={award.image} 
-                                    alt="Award" 
-                                    className="rounded-md mb-2 sm:mb-3 w-full" 
+                                <Image
+                                    src={award.image}
+                                    alt="Award"
+                                    className="rounded-md mb-2 sm:mb-3 w-full "
                                 />
                                 <div className="flex items-center text-xs sm:text-sm text-gray-500 mb-1">
                                     <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
@@ -336,7 +337,51 @@ export default function ExploreAwards() {
                             </div>
                         ))}
                     </div>
+                </div> */}
+                <div className="w-full lg:w-auto">
+                    <div
+                        className="flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 justify-center"
+                        style={{ fontFamily: "Playfair Display" }}
+                    >
+                        {awards.map((award, index) => (
+                            <div
+                                key={index}
+                                className="bg-transparent hover:scale-105 transition-transform duration-300 
+                   max-w-xs sm:max-w-sm mx-auto sm:mx-0 text-center sm:text-left mb-2 md:mb-0"
+                            >
+                                {/* Image */}
+                                <Image
+                                    src={award.image}
+                                    alt="Award"
+                                    className="rounded-md mb-2 sm:mb-3 
+                     w-70 h-auto sm:w-full mx-auto sm:mx-0"
+                                />
+
+                                {/* Date */}
+                                <div className="flex items-left justify-left sm:justify-start text-[10px] sm:text-sm text-gray-500 mb-1">
+                                    <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                                    {award.date}
+                                </div>
+
+                                {/* Title */}
+                                <h3 className="font-bold text-sm sm:text-lg text-left text-[#A21B43]">
+                                    {award.title}
+                                </h3>
+
+                                {/* Location */}
+                                <div className="text-[10px] sm:text-sm text-left text-gray-600 mb-1">
+                                    📍 {award.location}
+                                </div>
+
+                                {/* Description */}
+                                <p className="text-[11px] sm:text-sm text-left text-gray-900">
+                                    {award.desc}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
+
             </div>
 
             {/* See More Button - responsive sizing */}

@@ -3,3 +3,10 @@
 .body{
   background-color: #EDDEBA;
 }
+
+:root {
+  --font-geist-sans: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+  --font-playfair: 'Playfair Display', serif;
+  --font-roboto: 'Roboto', sans-serif;
+}

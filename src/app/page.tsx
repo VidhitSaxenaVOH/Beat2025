@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import WhyBeatMatters from './components/WhyBeatMatters';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import LeadersSection from './components/LeadersSection';
+import SpeakersSection from './components/SpeakersSection';
 
 const page = () => {
   return (
@@ -41,7 +41,7 @@ const page = () => {
         
         <section id="leaders">
           {/* You might want to create a Leaders component or use existing one */}
-          <LeadersSection/>
+          <SpeakersSection/>
         </section>
         
         <section id="partners">

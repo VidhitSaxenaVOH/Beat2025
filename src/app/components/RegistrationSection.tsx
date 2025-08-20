@@ -642,7 +642,7 @@ const RegistrationSection = () => {
                                     <span className="mt-0.5 text-sm sm:text-base lg:text-lg">
                                         {feature.available ? "✓" : "✕"}
                                     </span>
-                                    <span className={`text-xs sm:text-sm leading-relaxed ${!feature.available ? 'line-through' : ''}`}>
+                                    <span className={`text-base sm:text-sm leading-relaxed ${!feature.available ? 'line-through' : ''}`}>
                                         {feature.text}
                                     </span>
                                 </div>

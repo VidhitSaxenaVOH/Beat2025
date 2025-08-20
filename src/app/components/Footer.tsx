@@ -1,161 +1,7 @@
-// 'use client';
-
-// import React from 'react';
-// import {
-//   FaFacebookF,
-//   FaInstagram,
-//   FaYoutube,
-//   FaXTwitter,
-//   FaLinkedinIn,
-// } from 'react-icons/fa6';
-// import { RiTwitterXFill } from "react-icons/ri";
-// import { BiLogoFacebook } from "react-icons/bi";
-// import { AiFillLinkedin } from "react-icons/ai"; import Image from 'next/image';
-// import logo from '../../../public/VOH logo.png'
-// import { Copyright } from 'lucide-react';
-
-
-// const Footer: React.FC = () => {
-//   return (
-//     <section className='bg-[#EDDEBA] overflow-hidden'>
-//       <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
-
-//       <div className="relative bg-[#A45E5F] text-white pt-8 pb-4 overflow-hidden rounded-t-[40px]">
-
-//         {/* Background Video Overlay */}
-//         <video
-//           className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none"
-//           autoPlay
-//           loop
-//           muted
-//           playsInline
-//         >
-//           <source src="/sinus-wave.mp4" type="video/mp4" />
-//           Your browser does not support the video tag.
-//         </video>
-
-
-
-//         {/* Content */}
-//         <div className="relative z-10 max-w-7xl mx-auto text-center">
-//           {/* Logo and Tagline */}
-//           <div className="mb-4">
-//             <div className="flex justify-center mb-4">
-//               <Image
-//                 src={logo}
-//                 alt="logo"
-//                 width={200} // Smaller width
-//                 height={200} // Smaller height
-//                 className="object-contain"
-//               />
-//             </div>
-//             <p className="max-w-3xl mx-auto text-sm text-center font-semibold">
-//               Voice of Healthcare acts as an industry connect platform that sources ideas, synergizes stakeholders,
-//               and solves bottlenecks to advance healthcare relentlessly.
-//             </p>
-//           </div>
-
-//           {/* Footer Links */}
-//           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left  text-sm max-w-2xl justify-between mx-auto mt-8" >
-//             <div>
-//               <h4 className="font-bold mb-4  hover:text-[#EDDEBA]">NEWS</h4>
-//               <ul className="space-y-1 font-semibold ">
-//                 <li className=' hover:text-[#EDDEBA]'>Healthtech</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Pharma</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Hospitals & Providers</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Diagnostics</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Precision Medicine</li>
-//               </ul>
-//             </div>
-
-//             <div>
-//               <h4 className="font-bold mb-4  hover:text-[#EDDEBA]">VOH TV</h4>
-//               <ul className="space-y-1 font-semibold">
-//                 <li className=' hover:text-[#EDDEBA]'>Expert Speaks</li>
-//                 <li className=' hover:text-[#EDDEBA]'>The Big Idea</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Daily Broadcast</li>
-//               </ul>
-//             </div>
-
-//             <div>
-//               <h4 className="font-bold mb-4  hover:text-[#EDDEBA]">EVENTS</h4>
-//               <ul className="space-y-1 font-semibold">
-//                 <li className=' hover:text-[#EDDEBA]'>Health Awareness</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Conferences & Summits</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Brand Solutions</li>
-//               </ul>
-//             </div>
-
-//             <div>
-//               <h4 className="font-bold mb-4  hover:text-[#EDDEBA]">VOH EXCLUSIVE</h4>
-//               <ul className="space-y-1 font-semibold">
-//                 <li className=' hover:text-[#EDDEBA]'>Brands In Focus</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Idea Leader</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Listicles</li>
-//                 <li className=' hover:text-[#EDDEBA]'>Editorials</li>
-//               </ul>
-//             </div>
-//           </div>
-
-//           {/* Social Icons */}
-//           <div className="flex justify-center gap-6 mt-2">
-//             <BiLogoFacebook
-//               className="w-10 h-10 cursor-pointer text-[#A15B5B] p-1 bg-white rounded-full 
-//     hover:bg-[#A15B5B] hover:text-white transition-all duration-300 transform hover:scale-110"
-//             />
-//             <FaInstagram
-//               className="w-10 h-10 cursor-pointer text-[#A15B5B] p-1 bg-white rounded-full 
-//     hover:bg-[#A15B5B] hover:text-white transition-all duration-300 transform hover:scale-110"
-//             />
-//             <FaYoutube
-//               className="w-10 h-10 cursor-pointer text-[#A15B5B] p-1 bg-white rounded-full 
-//     hover:bg-[#A15B5B] hover:text-white transition-all duration-300 transform hover:scale-110"
-//             />
-//             <RiTwitterXFill
-//               className="w-10 h-10 cursor-pointer text-[#A15B5B] p-1 bg-white rounded-full 
-//     hover:bg-[#A15B5B] hover:text-white transition-all duration-300 transform hover:scale-110"
-//             />
-//             <AiFillLinkedin
-//               className="w-10 h-10 cursor-pointer text-[#A15B5B] p-1 bg-white rounded-full 
-//     hover:bg-[#A15B5B] hover:text-white transition-all duration-300 transform hover:scale-110"
-//             />
-//           </div>
-
-
-//           {/* Bottom Links */}
-//           <div className="flex flex-wrap justify-center items-center gap-6 text-sm mt-4  font-semibold">
-//             <span className=' hover:text-[#EDDEBA]'>About Us</span>
-//             <span className='text-lg'>•</span>
-//             <span className=' hover:text-[#EDDEBA]'>Ethics</span>
-//             <span className='text-lg'>•</span>
-//             <span className=' hover:text-[#EDDEBA]'>Privacy Policy</span>
-//             <span className='text-lg'>•</span>
-//             <span className=' hover:text-[#EDDEBA]'>Refund Policy</span>
-//             <span className='text-lg'>•</span>
-//             <span className=' hover:text-[#EDDEBA]'>Terms & Conditions</span>
-//           </div>
-//         </div>
-
-
-
-//       </div>
-//       <div className='bg-[#842738] text-center py-2'>
-//         <p className='text-white text-md font-bold flex justify-center items-center gap-2'>
-//           <Copyright size={22} /> ALL RIGHTS RESERVED BY VOH 2025
-//         </p>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Footer;
-
-
 'use client';
 
 import React from 'react';
 import {
-  FaFacebookF,
   FaInstagram,
   FaYoutube,
 } from 'react-icons/fa6';
@@ -207,8 +53,8 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Footer Links */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-left text-xs sm:text-sm max-w-2xl mx-auto mt-8">
+          {/* Footer Links
+          <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-4 gap-6 text-left text-xs sm:text-sm max-w-2xl mx-auto mt-8">
             <div>
               <h4 className="font-bold mb-3 sm:mb-4">
                 NEWS
@@ -257,7 +103,57 @@ const Footer: React.FC = () => {
                 <li className="hover:text-[#EDDEBA]">Editorials</li>
               </ul>
             </div>
-          </div>
+          </div> */}
+          {/* Footer Links */}
+<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-left md:text-left text-xs sm:text-sm max-w-2xl mx-auto mt-8">
+  <div>
+    <h4 className="font-bold mb-3 sm:mb-4">
+      NEWS
+    </h4>
+    <ul className="space-y-1 font-semibold">
+      <li className="hover:text-[#EDDEBA]">Healthtech</li>
+      <li className="hover:text-[#EDDEBA]">Pharma</li>
+      <li className="hover:text-[#EDDEBA]">Hospitals & Providers</li>
+      <li className="hover:text-[#EDDEBA]">Diagnostics</li>
+      <li className="hover:text-[#EDDEBA]">Precision Medicine</li>
+    </ul>
+  </div>
+
+  <div>
+    <h4 className="font-bold mb-3 sm:mb-4">
+      VOH TV
+    </h4>
+    <ul className="space-y-1 font-semibold">
+      <li className="hover:text-[#EDDEBA]">Expert Speaks</li>
+      <li className="hover:text-[#EDDEBA]">The Big Idea</li>
+      <li className="hover:text-[#EDDEBA]">Daily Broadcast</li>
+    </ul>
+  </div>
+
+  <div>
+    <h4 className="font-bold mb-3 sm:mb-4">
+      EVENTS
+    </h4>
+    <ul className="space-y-1 font-semibold">
+      <li className="hover:text-[#EDDEBA]">Health Awareness</li>
+      <li className="hover:text-[#EDDEBA]">Conferences & Summits</li>
+      <li className="hover:text-[#EDDEBA]">Brand Solutions</li>
+    </ul>
+  </div>
+
+  <div>
+    <h4 className="font-bold mb-3 sm:mb-4">
+      VOH EXCLUSIVE
+    </h4>
+    <ul className="space-y-1 font-semibold">
+      <li className="hover:text-[#EDDEBA]">Brands In Focus</li>
+      <li className="hover:text-[#EDDEBA]">Idea Leader</li>
+      <li className="hover:text-[#EDDEBA]">Listicles</li>
+      <li className="hover:text-[#EDDEBA]">Editorials</li>
+    </ul>
+  </div>
+</div>
+
 
           {/* Social Icons */}
           {/* <div className="flex justify-center gap-4 sm:gap-6 mt-6 flex-wrap">
