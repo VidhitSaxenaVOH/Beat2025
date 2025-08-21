@@ -17,10 +17,8 @@ const facts = [
 
 export default function WhyBeatMatters() {
   return (
-    <section className="relative bg-[#EDDEBA] py-8 pb-16 overflow-hidden">
+    <section className="relative bg-[#EDDEBA] py-8 overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
-              {/* Mobile/Tablet: Smaller, centered background */}
-
               
               {/* Desktop/Laptop: Original positioning */}
               <div className="hidden lg:block">
@@ -104,11 +102,11 @@ export default function WhyBeatMatters() {
         </p>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-left max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 text-left max-w-4xl mx-auto">
   {facts.map((fact, index) => (
     <div key={index} className="relative flex items-start space-x-6 space-y-10">
       {/* Outlined background number */}
-      <div className="absolute -left-6 -top-12  text-[110px] font-bold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]" style={{
+      <div className="absolute -left-2 -top-6 md:-left-3 md:-top-8 lg:-left-5 lg:-top-10 text-[60px] md:text-[80px] lg:text-[100px] font-bold opacity-50 select-none tracking-[0.001em] whitespace-nowrap text-[#4f4f4f]" style={{
 
                             WebkitTextStroke: "1px #9ca3af",
                             color: "transparent"
@@ -117,9 +115,9 @@ export default function WhyBeatMatters() {
       </div>
 
       {/* Foreground solid number */}
-      <div className="text-7xl font-semibold text-black relative z-10">{`0${index + 1}`}</div>
+      <div className="text-5xl md:text-6xl lg:text-7xl font-semibold text-black relative z-10">{`0${index + 1}`}</div>
 
-      <p className="text-base md:text-lg leading-relaxed pl-2 text-gray-600 relative z-10">{fact}</p>
+      <p className="text-base md:text-md lg:text-lg leading-relaxed pl-2 text-gray-600 relative z-10">{fact}</p>
     </div>
   ))}
 </div>

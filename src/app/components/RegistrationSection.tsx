@@ -515,7 +515,7 @@ const RegistrationSection = () => {
             title: "Student",
             price: "₹ 1180",
             gst: "(Including 18% GST)",
-            link: "https://example.com/student",  // 🔗 student link
+            link: "https://forms.zohopublic.in/voiceofhealthcare/form/StudentfeeBEAT2025/formperma/Ds0MzbZmX4Xmm2G_D2M0c4NOdhFJ8rwqsMZkkeUfq5Q",  // 🔗 student link
             features: [
                 { text: "Lunch, Delegate Kit", available: true },
                 { text: "Certificate of Participation", available: true },
@@ -527,7 +527,7 @@ const RegistrationSection = () => {
             title: "Individual",
             price: "₹ 1770",
             gst: "(Including 18% GST)",
-            link: "https://example.com/individual", // 🔗 individual link
+            link: "https://forms.zohopublic.in/voiceofhealthcare/form/IndividualfeeBeat2025/formperma/QGx5N9jaLiG_o3h7HpTN9zNe713LIPSKP5EtLuoh8XU", // 🔗 individual link
             features: [
                 { text: "Lunch, Delegate Kit", available: true },
                 { text: "Certificate of Participation", available: true },
@@ -539,7 +539,7 @@ const RegistrationSection = () => {
             title: "Group of 3",
             price: "₹ 4720",
             gst: "(Including 18% GST)",
-            link: "https://example.com/group", // 🔗 group link
+            link: "https://forms.zohopublic.in/voiceofhealthcare/form/Groupof3Beat2025/formperma/APy4o7miFIxx1XEJe4Mc3kzloX5eI6qNIpVq1TCR_Qo", // 🔗 group link
             features: [
                 { text: "Lunch, Delegate Kit", available: true },
                 { text: "Certificate of Participation", available: true },
@@ -605,18 +605,18 @@ const RegistrationSection = () => {
             <div className="text-center mb-6 sm:mb-8 lg:mb-12 px-4">
                 <h2 
                     className="text-xl sm:text-2xl lg:text-3xl font-bold text-black mb-2" 
-                    style={{ fontFamily: "Playfair Display" }}
+                    
                 >
                     Choose Your Pass
                 </h2>
             </div>
 
             {/* Cards */}
-            <div className="mt-4 sm:mt-6 lg:mt-8 grid gap-6 sm:gap-8 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto px-8 sm:px-6 lg:px-0">
+            <div className="mt-4 sm:mt-6 lg:mt-8 grid gap-6 sm:gap-8 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto px-8 sm:x-6 lg:px-0">
                 {cards.map((card, index) => (
                     <div
                         key={index}
-                        className="rounded-lg p-4 sm:p-6 lg:p-8 transition duration-300 transform hover:scale-100 bg-transparent text-black hover:bg-[#A45E5F] hover:text-white"
+                        className="rounded-lg p-4 sm:p-6 lg:p-8 transition duration-300 transform hover:scale-105 bg-transparent text-black hover:bg-[#A45E5F] hover:text-white"
                         style={{
                             boxShadow: '0 6px 20px rgba(162, 27, 67, 0.5)'
                         }}
@@ -624,25 +624,25 @@ const RegistrationSection = () => {
                         {/* Title */}
                         <h3 
                             className="text-lg sm:text-xl lg:text-2xl font-bold text-center mb-2 sm:mb-3" 
-                            style={{ fontFamily: "Playfair Display" }}
+                            
                         >
                             {card.title}
                         </h3>
 
                         {/* Price */}
-                        <div className="text-center mb-4 sm:mb-6 lg:mb-8" style={{ fontFamily: "Playfair Display" }}>
+                        <div className="text-center mb-4 sm:mb-6 lg:mb-8" >
                             <p className="text-xl sm:text-2xl lg:text-3xl font-bold mb-1">{card.price}</p>
                             <p className="text-xs sm:text-sm opacity-75">{card.gst}</p>
                         </div>
 
                         {/* Features */}
-                        <div className="mb-4 sm:mb-5 lg:mb-6 space-y-1" style={{ fontFamily: "Playfair Display" }}>
+                        <div className="mb-4 sm:mb-5 lg:mb-6 space-y-1">
                             {card.features.map((feature, i) => (
                                 <div key={i} className={`flex items-start gap-2 sm:gap-3 ${!feature.available ? 'opacity-60' : ''}`}>
                                     <span className="mt-0.5 text-sm sm:text-base lg:text-lg">
                                         {feature.available ? "✓" : "✕"}
                                     </span>
-                                    <span className={`text-base sm:text-sm leading-relaxed ${!feature.available ? 'line-through' : ''}`}>
+                                    <span className={`text-[12px] sm:text-base lg:text-md leading-relaxed ${!feature.available ? 'line-through' : ''}`}>
                                         {feature.text}
                                     </span>
                                 </div>
@@ -656,7 +656,7 @@ const RegistrationSection = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block rounded-full px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 text-xs sm:text-sm font-bold transition duration-300 hover:scale-105 hover:shadow-md bg-[#A45E5F] text-[#EDDEBA] hover:bg-[#EDDEBA] hover:text-[#A45E5F]"
-                                style={{ fontFamily: "Playfair Display" }}
+                               
                             >
                                 REGISTER NOW
                             </a>

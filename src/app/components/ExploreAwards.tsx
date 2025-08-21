@@ -151,22 +151,23 @@ import Image from 'next/image';
 import { Calendar } from 'lucide-react';
 
 import awardImage from '../../../public/award-sample.png';
+import awardImage2 from '../../../public/award-sample2.png';
 import mapImage from '../../../public/map.png';
 
 const awards = [
     {
         date: '22 June, 2025',
         location: 'Mumbai',
-        title: 'IVF Excellence Awards',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: '2nd Edition IVF Excellence Awards',
+        desc: 'The IVF Excellence Awards, now in its 2nd edition...',
         image: awardImage,
     },
     {
-        date: '22 June, 2025',
-        location: 'Mumbai',
-        title: 'IVF Excellence Awards',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        image: awardImage,
+        date: '20 April, 2025',
+        location: 'New Delhi',
+        title: '2nd Edition Precision Med India Awards',
+        desc: 'The Precision Med India Awards 2025 aims ...',
+        image: awardImage2,
     },
 ];
 
@@ -198,19 +199,6 @@ export default function ExploreAwards() {
                 }}
             />
 
-            {/* Desktop positioning - original */}
-            {/* <Image
-                    src="/CUbranch.png"
-                    alt="Branch Background"
-                    fill
-                    quality={100}
-                    className="opacity-80 hidden lg:block"
-                    style={{
-                      objectFit: 'scale-down',
-                      transform: 'translate(-210px, -340px)', // Original desktop positioning
-                    }}
-                  /> */}
-            {/* Header */}
             <div>
                 <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
 
@@ -263,8 +251,11 @@ export default function ExploreAwards() {
             {/* Main Content - responsive layout */}
             <div className="flex flex-col lg:flex-row justify-center items-center gap-4 sm:gap-6 lg:gap-10 max-w-5xl mx-auto mt-2 sm:mt-3 lg:mt-4">
                 {/* Map Section - responsive sizing */}
-                <div className="relative max-w-xs sm:max-w-sm lg:max-w-md w-full group">
-                    {/* Map Image with Blur */}
+                <div
+                    className="relative max-w-xs sm:max-w-sm lg:max-w-md w-full group focus-within:opacity-100"
+                    tabIndex={0} // 👈 makes the container focusable
+                >
+                    {/* Map Image */}
                     <Image
                         src={mapImage}
                         alt="Map"
@@ -274,22 +265,25 @@ export default function ExploreAwards() {
                         height={400}
                     />
 
-                    {/* Overlay Text - responsive sizing */}
+                    {/* Overlay Text */}
                     <div
-                        className="absolute inset-0 flex justify-center items-center text-[#EDDEBA] text-xl sm:text-2xl lg:text-3xl font-bold bg-black/60 rounded-md opacity-100 transition-opacity duration-500 group-hover:opacity-0"
-                        style={{ fontFamily: "Playfair Display" }}
+                        className="absolute inset-0 flex justify-center items-center text-[#EDDEBA] text-xl sm:text-2xl lg:text-3xl font-bold bg-black/60 rounded-md 
+               opacity-100 transition-opacity duration-500 group-hover:opacity-0 group-focus-within:opacity-0"
+                        
                     >
                         VENUE
                     </div>
 
-                    {/* GET DIRECTIONS Button - responsive sizing */}
+                    {/* GET DIRECTIONS Button */}
                     <button
-                        className="absolute bottom-3 sm:bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 bg-[#A15B5B] text-white px-3 sm:px-4 lg:px-6 py-1.5 sm:py-2 text-sm sm:text-base rounded-full hover:bg-[#8f1738] transition font-semibold opacity-0 group-hover:opacity-100 duration-500"
-                        style={{ fontFamily: "Playfair Display" }}
+                        className="absolute bottom-3 sm:bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 bg-[#A15B5B] text-white px-3 sm:px-4 lg:px-6 py-1.5 sm:py-2 text-sm sm:text-base rounded-full hover:bg-[#8f1738] transition font-semibold 
+               opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 duration-500"
+                        
                     >
                         GET DIRECTIONS
                     </button>
                 </div>
+
 
                 {/* Divider Shape - responsive sizing and positioning */}
                 <div className="hidden lg:block">
@@ -315,38 +309,16 @@ export default function ExploreAwards() {
 
 
                 {/* Awards List - responsive grid */}
-                {/* <div className="w-full lg:w-auto">
-                    <div className="flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 justify-center" style={{ fontFamily: "Playfair Display" }}>
-                        {awards.map((award, index) => (
-                            <div
-                                key={index}
-                                className="bg-transparent hover:scale-105 transition-transform duration-300 max-w-sm mx-auto sm:mx-0"
-                            >
-                                <Image
-                                    src={award.image}
-                                    alt="Award"
-                                    className="rounded-md mb-2 sm:mb-3 w-full "
-                                />
-                                <div className="flex items-center text-xs sm:text-sm text-gray-500 mb-1">
-                                    <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                                    {award.date}
-                                </div>
-                                <h3 className="font-bold text-base sm:text-lg text-[#A21B43]">{award.title}</h3>
-                                <div className="text-xs sm:text-sm text-gray-600 mb-1">📍 {award.location}</div>
-                                <p className="text-xs sm:text-sm text-gray-900">{award.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
                 <div className="w-full lg:w-auto">
                     <div
                         className="flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 justify-center"
-                        style={{ fontFamily: "Playfair Display" }}
+                        
                     >
                         {awards.map((award, index) => (
                             <div
                                 key={index}
-                                className="bg-transparent hover:scale-105 transition-transform duration-300 
+                                tabIndex={0}
+                                className="bg-transparent hover:scale-105 focus:scale-105 transition-transform duration-300 
                    max-w-xs sm:max-w-sm mx-auto sm:mx-0 text-center sm:text-left mb-2 md:mb-0"
                             >
                                 {/* Image */}
@@ -385,11 +357,20 @@ export default function ExploreAwards() {
             </div>
 
             {/* See More Button - responsive sizing */}
-            <div className="flex justify-center mt-4 sm:mt-6 lg:mt-8" style={{ fontFamily: "Playfair Display" }}>
-                <button className="bg-[#A15B5B] text-white font-semibold px-4 sm:px-5 lg:px-6 py-1.5 sm:py-2 text-sm sm:text-base rounded-full hover:bg-[#8f1738] transition">
-                    SEE MORE
-                </button>
+            <div
+                className="flex justify-center mt-4 sm:mt-6 lg:mt-8"
+            >
+                <a
+                    href="https://event.vohnetwork.com/events/flagshipevent"  // 🔗 your external link here
+                    target="_blank"             // opens in new tab
+                    rel="noopener noreferrer"   // security best practice
+                >
+                    <button className="bg-[#A15B5B] text-white font-semibold px-4 sm:px-5 lg:px-6 py-1.5 sm:py-2 text-sm sm:text-base rounded-full hover:bg-[#8f1738] transition">
+                        SEE MORE
+                    </button>
+                </a>
             </div>
+
         </div>
     );
 }

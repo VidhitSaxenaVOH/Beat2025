@@ -127,14 +127,14 @@ const KeyDiscussionPointsSection = () => {
             </div>
 
             {/* Image container - responsive spacing and sizing */}
-            <div className="flex justify-center items-center max-w-6xl mx-auto py-3 sm:py-4 lg:py-6 px-4 sm:px-6 lg:px-0">
+            <div className="flex justify-center items-center max-w-7xl mx-auto py-3 sm:py-4 lg:py-6 px-4 sm:px-6 lg:px-0">
                 <Image
-                    src="/kdp.png"
+                    src="/KDP.png"
                     alt="Key Discussion Points Graphic"
-                    className="w-full max-w-[340px] sm:max-w-[500px] md:max-w-[750px] lg:max-w-[1800px] object-contain h-auto"
+                    className="w-full max-w-[1200px] sm:max-w-[1400px] md:max-w-[1600px] lg:max-w-[2000px] object-contain h-auto"
                     priority
-                    width={800}
-                    height={800}
+                    width={1800}
+                    height={1200}
                 />
             </div>
         </section>

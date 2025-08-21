@@ -481,13 +481,11 @@ export default function ContactUs() {
     partnership: [
       {
         name: 'Pinky Chahar',
-        designation: 'Director',
         email: 'pinky.chahar@voiceofhealthcare.org',
         phone: '9599193575',
       },
       {
         name: 'Khushbu Sharma',
-        designation: 'Joint Director',
         email: 'Khushbu.sh@voiceofhealthcare.org',
         phone: '8407982899',
       },
@@ -495,7 +493,6 @@ export default function ContactUs() {
     delegate: [
       {
         name: 'Katyayni Sinha',
-        designation: 'Manager Administration',
         email: 'katyayni.s@voiceofhealthcare.org',
         phone: '8789925401',
       },
@@ -606,15 +603,9 @@ export default function ContactUs() {
                       {person.name}
                     </span>
                   </div>
-                  {/* <div className="flex items-center gap-2">
-                    <User className="w-3 h-3 sm:w-4 sm:h-4" />
-                    <span className="text-xs sm:text-sm lg:text-base break-all">
-                      {person.designation}
-                    </span>
-                  </div> */}
-                  <div className="flex items-start gap-2">
-                    <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
-                    <span className="text-xs sm:text-sm lg:text-base break-all">
+                  <div className="flex items-center gap-2">
+                    <Mail className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
+                    <span className="text-xs sm:text-sm lg:text-base break-words">
                       {person.email}
                     </span>
                   </div>
@@ -634,83 +625,46 @@ export default function ContactUs() {
         <div className="max-w-xl mx-auto mt-8 sm:mt-12 lg:mt-16">
           <div className="bg-[#A15B5B] rounded-xl sm:rounded-2xl px-4 sm:px-6 lg:px-8 py-2 text-white shadow-lg">
             <div className="text-center mb-4 sm:mb-5 lg:mb-6">
-              <div className="bg-white bg-opacity-20 rounded-full px-8 sm:px-10 md:px-22 lg:px-26 inline-block">
+              <div className="bg-white bg-opacity-20 rounded-full px-8 sm:px-10 md:px-18 lg:px-24 inline-block">
                 <h3
                   className="text-[10px] sm:text-base lg:text-lg font-semibold tracking-wide text-[#A15B5B]"
                   style={{ fontFamily: 'var(--font-playfair)' }}
                 >
                   FOR DELEGATES & AWARDS
-                </h3> 
+                </h3>
               </div>
             </div>
 
-            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               {people.delegate.map((person, index) => (
                 <div key={index} className="space-y-1">
+                  {/* Name */}
                   <div className="flex items-center gap-2">
-                    <User className="w-3 h-3 sm:w-4 sm:h-4 font-semibold" />
-                    <span className="text-sm sm:text-base lg:text-md font-semibold">
+                    <User className="w-3 h-3 sm:w-4 sm:h-4 font-semibold shrink-0" />
+                    <span className="text-[12px] sm:text-base lg:text-md font-semibold">
                       {person.name}
                     </span>
                   </div>
+
+
+                  {/* Email */}
                   <div className="flex items-center gap-2">
-                    <User className="w-3 h-3 sm:w-4 sm:h-4" />
-                    <span className="text-xs sm:text-sm lg:text-base break-all">
-                      {person.designation}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
-                    <span className="text-xs sm:text-sm lg:text-base break-all">
+                    <Mail className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
+                    <span className="text-xs sm:text-sm lg:text-base break-words">
                       {person.email}
                     </span>
                   </div>
+
+                  {/* Phone */}
                   <div className="flex items-center gap-2">
-                    <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
-                    <span className="text-xs sm:text-sm lg:text-base break-all">
+                    <Phone className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
+                    <span className="text-xs sm:text-sm lg:text-base">
                       {person.phone}
                     </span>
                   </div>
                 </div>
               ))}
-            </div> */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-  {people.delegate.map((person, index) => (
-    <div key={index} className="space-y-1">
-      {/* Name */}
-      <div className="flex items-center gap-2">
-        <User className="w-3 h-3 sm:w-4 sm:h-4 font-semibold shrink-0" />
-        <span className="text-[12px] sm:text-base lg:text-md font-semibold">
-          {person.name}
-        </span>
-      </div>
-
-      {/* Designation - single line */}
-      {/* <div className="flex items-center gap-2">
-        <User className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
-        <span className="text-xs sm:text-sm lg:text-base break-words">
-          {person.designation}
-        </span>
-      </div> */}
-
-      {/* Email */}
-      <div className="flex items-center gap-2">
-        <Mail className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
-        <span className="text-xs sm:text-sm lg:text-base break-words">
-          {person.email}
-        </span>
-      </div>
-
-      {/* Phone */}
-      <div className="flex items-center gap-2">
-        <Phone className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
-        <span className="text-xs sm:text-sm lg:text-base">
-          {person.phone}
-        </span>
-      </div>
-    </div>
-  ))}
-</div>
+            </div>
 
           </div>
         </div>

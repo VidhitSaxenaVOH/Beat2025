@@ -482,7 +482,7 @@ const Navbar = () => {
                             {/* Logo */}
                             <div className="flex items-center align-middle p-2 mr-4 flex-shrink-0">
                                 <Image
-                                    src="/VOH_logo_2.png"
+                                    src="/VOH_Logo_3.png"
                                     alt="VOH Logo"
                                     width={110}
                                     height={30}
@@ -532,7 +532,7 @@ const Navbar = () => {
                     <div className="bg-[#E8D5B7] rounded-r-full px-6 py-[26.5px] shadow-lg flex-shrink-0">
                         <div className="flex items-center gap-3">
                             <a
-                                href="https://example.com"
+                                href="https://vohnetwork.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-8 h-8 rounded-full flex items-center justify-center cursor-pointer hover:bg-[#5A5A5A] transition-colors"
@@ -554,7 +554,7 @@ const Navbar = () => {
 
             {/* Tablet Navbar - Improved */}
             <div className="fixed top-4 left-4 right-4 z-50 hidden md:block lg:hidden">
-                <div className="bg-[#E8D5B7] rounded-2xl px-5 py-4 shadow-xl backdrop-blur-sm border border-[#D4C4A8]/30">
+                <div className="bg-[#E8D5B7] rounded-full px-5 py-4 shadow-xl backdrop-blur-sm border border-[#D4C4A8]/30">
                     <div className="flex items-center justify-between">
                         {/* Logo and Title */}
                         <div className="flex items-center gap-4">
@@ -581,12 +581,6 @@ const Navbar = () => {
                         <div className="flex items-center gap-3">
                             {/* Quick access to key sections */}
                             <div className="hidden md:flex items-center gap-2">
-                                {/* <button
-                                    onClick={() => scrollToSection('overview')}
-                                    className="px-3 py-1.5 text-xs font-medium text-[#4A4A4A] hover:text-[#8B1538] hover:bg-[#D4C4A8]/50 rounded-full transition-all duration-200"
-                                >
-                                    OVERVIEW
-                                </button> */}
                                 <button
                                     onClick={() => scrollToSection('registration')}
                                     className="px-3 py-1.5 text-xs font-medium text-white bg-[#8B1538] hover:bg-[#A21B43] rounded-full transition-all duration-200"
@@ -619,7 +613,7 @@ const Navbar = () => {
 
             {/* Mobile Navbar - Improved */}
             <div className="fixed top-4 left-3 right-3 z-50 md:hidden">
-                <div className="bg-[#E8D5B7] rounded-2xl px-4 py-3 shadow-xl backdrop-blur-sm border border-[#D4C4A8]/30">
+                <div className="bg-[#E8D5B7] rounded-full px-4 py-3 shadow-xl backdrop-blur-sm border border-[#D4C4A8]/30">
                     <div className="flex items-center justify-between">
                         {/* Logo and Compact Title */}
                         <div className="flex items-center gap-3 flex-1 min-w-0">

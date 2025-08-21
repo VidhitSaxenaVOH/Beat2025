@@ -127,11 +127,11 @@ const WhoShouldAttendSection = () => {
             </div>
     
                 {/* Image container - responsive sizing and spacing */}
-                <div className="flex justify-center items-center pb-4 sm:pb-6 lg:pb-8 px-4 sm:px-6 lg:px-0">
+                <div className="flex justify-center items-center pb-4 sm:pb-6 lg:pb-8  md:px-6 lg:px-0">
                     <Image
-                        src="/wsa.png"
+                        src="/wsa(1).png"
                         alt="Who Should Attend Graphic"
-                        className="w-full max-w-[300px] h-[200px] sm:max-w-[470px] sm:h-[300px] md:max-w-[620px] md:h-[400px] lg:max-w-[1200px] lg:h-[600px] object-cover"
+                        className="w-full max-w-[400px] h-[230px] sm:max-w-[500px] sm:h-[300px] md:max-w-[620px] md:h-[400px] lg:max-w-[1200px] lg:h-[600px] object-cover"
                         priority
                         width={800}
                         height={700}

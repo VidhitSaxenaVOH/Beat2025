@@ -46,134 +46,129 @@ const Footer: React.FC = () => {
                 className="object-contain w-28 sm:w-40 md:w-48 lg:w-[200px] h-auto"
               />
             </div>
-            <p className="max-w-3xl mx-auto text-xs sm:text-sm md:text-base font-semibold leading-relaxed">
+            <p className="max-w-3xl mx-auto text-sm sm:text-sm md:text-base font-semibold leading-relaxed">
               Voice of Healthcare acts as an industry connect platform that
               sources ideas, synergizes stakeholders, and solves bottlenecks to
               advance healthcare relentlessly.
             </p>
           </div>
-
-          {/* Footer Links
-          <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-4 gap-6 text-left text-xs sm:text-sm max-w-2xl mx-auto mt-8">
-            <div>
-              <h4 className="font-bold mb-3 sm:mb-4">
-                NEWS
-              </h4>
-              <ul className="space-y-1 font-semibold">
-                <li className="hover:text-[#EDDEBA]">Healthtech</li>
-                <li className="hover:text-[#EDDEBA]">Pharma</li>
-                <li className="hover:text-[#EDDEBA]">Hospitals & Providers</li>
-                <li className="hover:text-[#EDDEBA]">Diagnostics</li>
-                <li className="hover:text-[#EDDEBA]">Precision Medicine</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-3 sm:mb-4">
-                VOH TV
-              </h4>
-              <ul className="space-y-1 font-semibold">
-                <li className="hover:text-[#EDDEBA]">Expert Speaks</li>
-                <li className="hover:text-[#EDDEBA]">The Big Idea</li>
-                <li className="hover:text-[#EDDEBA]">Daily Broadcast</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-3 sm:mb-4">
-                EVENTS
-              </h4>
-              <ul className="space-y-1 font-semibold">
-                <li className="hover:text-[#EDDEBA]">Health Awareness</li>
-                <li className="hover:text-[#EDDEBA]">
-                  Conferences & Summits
-                </li>
-                <li className="hover:text-[#EDDEBA]">Brand Solutions</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-3 sm:mb-4">
-                VOH EXCLUSIVE
-              </h4>
-              <ul className="space-y-1 font-semibold">
-                <li className="hover:text-[#EDDEBA]">Brands In Focus</li>
-                <li className="hover:text-[#EDDEBA]">Idea Leader</li>
-                <li className="hover:text-[#EDDEBA]">Listicles</li>
-                <li className="hover:text-[#EDDEBA]">Editorials</li>
-              </ul>
-            </div>
-          </div> */}
           {/* Footer Links */}
-<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-left md:text-left text-xs sm:text-sm max-w-2xl mx-auto mt-8">
-  <div>
-    <h4 className="font-bold mb-3 sm:mb-4">
-      NEWS
-    </h4>
-    <ul className="space-y-1 font-semibold">
-      <li className="hover:text-[#EDDEBA]">Healthtech</li>
-      <li className="hover:text-[#EDDEBA]">Pharma</li>
-      <li className="hover:text-[#EDDEBA]">Hospitals & Providers</li>
-      <li className="hover:text-[#EDDEBA]">Diagnostics</li>
-      <li className="hover:text-[#EDDEBA]">Precision Medicine</li>
-    </ul>
-  </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto mt-8 mb-2">
+            {/* NEWS */}
+            <div className="flex flex-col items-center md:items-start text-left text-sm sm:text-base">
+              <h4 className="font-bold mb-3 sm:mb-4">NEWS</h4>
+              <ul className="space-y-1 font-semibold">
+                <li>
+                  <a href="https://vohnetwork.com/news/healthtech" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Healthtech
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/news/pharma" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Pharma
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/news/hospitals-providers" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Hospitals & Providers
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/news/diagnostics" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Diagnostics
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/news/precision-medicine" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Precision Medicine
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-  <div>
-    <h4 className="font-bold mb-3 sm:mb-4">
-      VOH TV
-    </h4>
-    <ul className="space-y-1 font-semibold">
-      <li className="hover:text-[#EDDEBA]">Expert Speaks</li>
-      <li className="hover:text-[#EDDEBA]">The Big Idea</li>
-      <li className="hover:text-[#EDDEBA]">Daily Broadcast</li>
-    </ul>
-  </div>
+            {/* VOH TV */}
+            <div className="flex flex-col items-center md:items-start text-left text-sm sm:text-base">
+              <h4 className="font-bold mb-3 sm:mb-4">VOH TV</h4>
+              <ul className="space-y-1 font-semibold">
+                <li>
+                  <a href="https://vohnetwork.com/voh-tv/expert-speaks" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Expert Speaks
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/voh-tv/the-big-idea" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    The Big Idea
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/voh-tv/daily-broadcast" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Daily Broadcast
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-  <div>
-    <h4 className="font-bold mb-3 sm:mb-4">
-      EVENTS
-    </h4>
-    <ul className="space-y-1 font-semibold">
-      <li className="hover:text-[#EDDEBA]">Health Awareness</li>
-      <li className="hover:text-[#EDDEBA]">Conferences & Summits</li>
-      <li className="hover:text-[#EDDEBA]">Brand Solutions</li>
-    </ul>
-  </div>
+            {/* EVENTS */}
+            <div className="flex flex-col items-center md:items-start text-left text-sm sm:text-base">
+              <h4 className="font-bold mb-3 sm:mb-4">EVENTS</h4>
+              <ul className="space-y-1 font-semibold">
+                <li>
+                  <a href="https://event.vohnetwork.com/events/publichealthawareness" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Health Awareness
+                  </a>
+                </li>
+                <li>
+                  <a href="https://event.vohnetwork.com/events/flagshipevent" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Conferences & Summits
+                  </a>
+                </li>
+                <li>
+                  <a href="https://event.vohnetwork.com/events/brandsolutions" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Brand Solutions
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-  <div>
-    <h4 className="font-bold mb-3 sm:mb-4">
-      VOH EXCLUSIVE
-    </h4>
-    <ul className="space-y-1 font-semibold">
-      <li className="hover:text-[#EDDEBA]">Brands In Focus</li>
-      <li className="hover:text-[#EDDEBA]">Idea Leader</li>
-      <li className="hover:text-[#EDDEBA]">Listicles</li>
-      <li className="hover:text-[#EDDEBA]">Editorials</li>
-    </ul>
-  </div>
-</div>
+            {/* VOH EXCLUSIVE */}
+            <div className="flex flex-col items-center md:items-start text-left text-sm sm:text-base">
+              <h4 className="font-bold mb-3 sm:mb-4">VOH EXCLUSIVE</h4>
+              <ul className="space-y-1 font-semibold">
+                <li>
+                  <a href="https://vohnetwork.com/voh-exclusives/brands-in-focus" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Brands In Focus
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/voh-exclusives/idea-leader" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Idea Leader
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vohnetwork.com/voh-exclusives/listicles" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Listicles
+                  </a>
+                </li>
+                <li>
+                  <a href="https://example.com/editorials" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Editorials
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
 
 
           {/* Social Icons */}
-          {/* <div className="flex justify-center gap-4 sm:gap-6 mt-6 flex-wrap">
-            {[BiLogoFacebook, FaInstagram, FaYoutube, RiTwitterXFill, AiFillLinkedin].map(
-              (Icon, index) => (
-                <Icon
-                  key={index}
-                  className="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer text-[#A15B5B] p-1 bg-white rounded-full 
-                  hover:bg-[#A15B5B] hover:text-white transition-all duration-300 transform hover:scale-110"
-                />
-              )
-            )}
-          </div> */}
           <div className="flex justify-center gap-4 sm:gap-6 mt-6 flex-wrap">
             {[
               { Icon: BiLogoFacebook, url: "https://www.facebook.com/vohglobal" },
-              { Icon: FaInstagram, url: "https://instagram.com/yourprofile" },
+              { Icon: FaInstagram, url: "https://www.instagram.com/vohglobal/?igshid=NDk5N2NlZjQ%3D" },
               { Icon: FaYoutube, url: "https://www.youtube.com/@VoiceofHealthcare" },
               { Icon: RiTwitterXFill, url: "https://x.com/vohglobal" },
-              { Icon: AiFillLinkedin, url: "https://linkedin.com/in/yourprofile" },
+              { Icon: AiFillLinkedin, url: "https://www.linkedin.com/company/vohglobal/?viewAsMember=true" },
             ].map(({ Icon, url }, index) => (
               <a
                 key={index}
@@ -193,15 +188,25 @@ const Footer: React.FC = () => {
 
           {/* Bottom Links */}
           <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-xs sm:text-sm mt-4 font-semibold">
-            <span className="hover:text-[#EDDEBA]">About Us</span>
+            <span className="hover:text-[#EDDEBA]"><a href="https://vohnetwork.com/about-us" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    About Us
+                  </a></span>
             <span className="hidden sm:inline text-lg">•</span>
-            <span className="hover:text-[#EDDEBA]">Ethics</span>
+            <span className="hover:text-[#EDDEBA]"><a href="https://vohnetwork.com/mission-statement" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Ethics
+                  </a></span>
             <span className="hidden sm:inline text-lg">•</span>
-            <span className="hover:text-[#EDDEBA]">Privacy Policy</span>
+            <span className="hover:text-[#EDDEBA]"><a href="https://vohnetwork.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Privacy Policy
+                  </a></span>
             <span className="hidden sm:inline text-lg">•</span>
-            <span className="hover:text-[#EDDEBA]">Refund Policy</span>
+            <span className="hover:text-[#EDDEBA]"><a href="https://vohnetwork.com/refund-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Refund Policy
+                  </a></span>
             <span className="hidden sm:inline text-lg">•</span>
-            <span className="hover:text-[#EDDEBA]">Terms & Conditions</span>
+            <span className="hover:text-[#EDDEBA]"><a href="https://vohnetwork.com/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-[#EDDEBA]">
+                    Terms & Conditions
+                  </a></span>
           </div>
         </div>
       </div>

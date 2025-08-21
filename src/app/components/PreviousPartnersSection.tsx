@@ -78,30 +78,6 @@ import Image from 'next/image';
 const PreviousPartnersSection = () => {
   return (
      <section className="relative bg-[#EDDEBA] overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          {/* Mobile/Tablet: Smaller, centered background */}
-          <div className="lg:hidden absolute top-0 right-0 w-full h-full flex justify-center items-start pt-8">
-            <Image
-              src="/branch-bg.png"
-              alt="Background overlay"
-              width={400}
-              height={400}
-              className="opacity-30 object-contain"
-            />
-          </div>
-          
-          {/* Desktop/Laptop: Original positioning */}
-          <div className="hidden lg:block">
-            <Image
-              src="/branch-bg.png"
-              alt="Background overlay"
-              width={900}
-              height={900}
-              className="absolute top-[-240px] right-0 object-fill"
-            />
-          </div>
-        </div>
-
         <div>
           <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rozha+One&display=swap" rel="stylesheet"></link>
 
@@ -163,7 +139,7 @@ const PreviousPartnersSection = () => {
           <Image
             src="/OurPartners.png"
             alt="Previous Partners Graphic"
-            className="w-full max-w-[150px] h-[80px] sm:max-w-[150px] sm:h-[80px] md:max-w-[400px] md:h-[100px] lg:max-w-[500px] lg:h-[120px] object-contain"
+            className="w-full max-w-[160px] h-[90px] sm:max-w-[160px] sm:h-[90px] md:max-w-[400px] md:h-[100px] lg:max-w-[500px] lg:h-[120px] object-contain"
             priority
             width={800}
             height={600}
